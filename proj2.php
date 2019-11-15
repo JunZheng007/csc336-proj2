@@ -164,7 +164,7 @@
     <?php
     date_default_timezone_set('America/New_York');
     error_reporting(E_ALL ^ E_NOTICE);
-    //insert input data
+    //insert Producer
     if ($_REQUEST['name'] != "") {
         $name = mysqli_real_escape_string($mysql, $_REQUEST['name']);
         $address = mysqli_real_escape_string($mysql, $_REQUEST['address']);
