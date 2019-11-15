@@ -114,6 +114,52 @@
             }
             ?>
         </table>
+        <h3>Customer</h3>
+        <table border="0" cellpadding="0" cellspacing="0">
+            <tr bgcolor="#f87820">
+                <td class=tabhead><img src="img/blank.gif" alt="" width="200" height="6"><br><b>Name</b></td>
+                <td class=tabhead><img src="img/blank.gif" alt="" width="200" height="6"><br><b>SSN</b></td>
+                <td class=tabhead><img src="img/blank.gif" alt="" width="200" height="6"><br><b>Telephone</b></td>
+                <td><img src="img/blank.gif" alt="" width="10" height="25"></td>
+            </tr>
+            <?php
+            $result = mysqli_query($mysql, "SELECT * FROM Customer");
+            $i = 0;
+            while ($row = mysqli_fetch_array($result)) {
+                echo "<tr valign='middle'>";
+                echo "<td>" . $row['name'] . "</td>";
+                echo "<td>" . $row['SSN'] . "</td>";
+                echo "<td>" . $row['telephone'] . "</td>";
+                echo "</td>";
+                echo "</tr>";
+                $i++;
+            }
+            ?>
+        </table>
+        <h3>VIP</h3>
+        <table border="0" cellpadding="0" cellspacing="0">
+            <tr bgcolor="#f87820">
+                <td class=tabhead><img src="img/blank.gif" alt="" width="200" height="6"><br><b>Name</b></td>
+                <td class=tabhead><img src="img/blank.gif" alt="" width="200" height="6"><br><b>SSN</b></td>
+                <td class=tabhead><img src="img/blank.gif" alt="" width="200" height="6"><br><b>Staring Date</b></td>
+                <td class=tabhead><img src="img/blank.gif" alt="" width="200" height="6"><br><b>Discount</b></td>
+                <td><img src="img/blank.gif" alt="" width="10" height="25"></td>
+            </tr>
+            <?php
+            $result = mysqli_query($mysql, "SELECT * FROM VIP_customer");
+            $i = 0;
+            while ($row = mysqli_fetch_array($result)) {
+                echo "<tr valign='middle'>";
+                echo "<td>" . $row['name'] . "</td>";
+                echo "<td>" . $row['SSN'] . "</td>";
+                echo "<td>" . $row['staring_date'] . "</td>";
+                echo "<td>" . $row['discount'] . "</td>";
+                echo "</td>";
+                echo "</tr>";
+                $i++;
+            }
+            ?>
+        </table>
     </table>
     <?php
     date_default_timezone_set('America/New_York');
