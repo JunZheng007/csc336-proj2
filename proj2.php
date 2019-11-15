@@ -350,7 +350,7 @@
     </table>
 
 
-    <h2>Find Puducer</h2>
+    <h2>Find Producer</h2>
 
     <form action="<?php echo basename($_SERVER['PHP_SELF']); ?>" method="get">
         <table border="0" cellpadding="0" cellspacing="0">
