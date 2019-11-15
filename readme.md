@@ -5,6 +5,8 @@ In this project, I created a E/R diagram, and create some table based on the dia
 
 Here will show you how to use the php file.
 
+You can test it on http://www-cs.ccny.cuny.edu/~zhen1363/proj0/proj2.php
+
 ## Database Area
 
 - On the top of the page, you will see 7 table, They are CD, Producer, Produced, Supplier, Supplied, Customer, and VIP.
