@@ -1,6 +1,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <title>Find Producer</title>
+
 <body>
     <h1>Find Producer</h1>
     <?php
@@ -9,20 +10,9 @@
         die();
     }
     ?>
-<h2>Find Puducer</h2>
+    <h2>Find Puducer</h2>
 
-    <form action="<?php echo basename($_SERVER['PHP_SELF']); ?>" method="get">
-        <table border="0" cellpadding="0" cellspacing="0">
-            <tr>
-                <td>CD Artist</td>
-                <td><input type="text" size="30" name="find_artist"></td>
-            <tr>
-                <td>CD Year</td>
-                <td><input type="text" size="30" name="find_year"></td>
-                <td><input type="submit" value="Find"></td>
-            </tr>
-        </table>
-    </form>
+
     <?php
     if ($_REQUEST['find_artist'] != "") {
         $find_artist = mysqli_real_escape_string($mysql, $_REQUEST['find_artist']);
@@ -45,6 +35,19 @@
         }
     }
     ?>
+    <form action="<?php echo basename($_SERVER['PHP_SELF']); ?>" method="get">
+        <table border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>CD Artist</td>
+                <td><input type="text" size="30" name="find_artist"></td>
+            <tr>
+                <td>CD Year</td>
+                <td><input type="text" size="30" name="find_year"></td>
+                <td><input type="submit" value="Find"></td>
+            </tr>
+        </table>
+    </form>
     </table>
 </body>
+
 </html>
