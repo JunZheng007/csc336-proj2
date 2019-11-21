@@ -5,13 +5,7 @@ In this project, I created a E/R diagram, and create some table based on the dia
 
 Here will show you how to use the php file.
 
-You can test it on http://www-cs.ccny.cuny.edu/~zhen1363/proj0/proj2.php
-
-## Database Area
-
-- On the top of the page, you will see 7 table, They are CD, Producer, Produced, Supplier, Supplied, Customer, and VIP.
-
-- THey will change when you Add Producer, Add CD, OR Borrow CD.
+You can test it on http://www-cs.ccny.cuny.edu/~zhen1363/csc336-proj2/proj2_menu.php
 
 ## Add Producer
 
@@ -33,11 +27,11 @@ You can test it on http://www-cs.ccny.cuny.edu/~zhen1363/proj0/proj2.php
 
 - The default value for discount is 10
 
-- The borrow time is allways the current time.
+- The borrow time is allways the current date.
 
 ## Find Customer
 
-- Provide the CD title will find who borrowed the CD, and which date it was borrowed.
+- Provide the CD title will find who borrowed the CD, the telephone number of the member, and the date it was borrowed.
 
 ## Find Producer
 
