@@ -13,7 +13,8 @@
     <h2>Find Puducer</h2>
 
 
-    <?php
+<?php
+    error_reporting(E_ALL ^ E_NOTICE);
     if ($_REQUEST['find_artist'] != "") {
         $find_artist = mysqli_real_escape_string($mysql, $_REQUEST['find_artist']);
         $find_year = mysqli_real_escape_string($mysql, $_REQUEST['find_year']);
